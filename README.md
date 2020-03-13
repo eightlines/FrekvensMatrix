@@ -6,6 +6,8 @@ Output example: https://www.instagram.com/p/B9pN1hCAAhr/
 
 After opening the Frekvens Matrix, extract the circuit board and solder a ribbon cable to the pins below. I'm using an Arduino Uno for this example but any microcontroller shouuld do.
 
+Unplug the AC power input first. 
+
 - GND -> GND
 - LAK -> Latch -> Pin 8
 - CLK -> Clock -> Pin 12
@@ -16,3 +18,5 @@ After opening the Frekvens Matrix, extract the circuit board and solder a ribbon
 FrekvensLEDMatrix.toe is a TouchDesigner file to switch inputs and alter images on the matrix in realtime. Well, if 5 FPS counts as realtime. Notes are added to the TD File. You can download TouchDesigner (Non-Commercial) here: https://derivative.ca/download
 
 The Arduino script is configured to accept a string of 256 zeros or ones with a \n at the end. Once received it will print the screen to the Shift Register. 
+
+Note: Wiring the ribbon cable and hooking up the microcontroller will not affect the default Frekvens program. To return to the originally scheduled program, unplug the ribbon cable and plug in the power. The Frekvens should return to its normal mode. (I am not responsible for any damages to your Frekvens.)
